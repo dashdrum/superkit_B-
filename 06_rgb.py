@@ -12,9 +12,10 @@ if __name__ == '__main__':
 
 	def led_color_set(red_value,green_value,blue_value):
 	## Convert HEX to decimal percent
-		red_percent = (int(red_value,16)/255)*100
-		green_percent = (int(green_value,16)/255)*100
-		blue_percent = (int(blue_value,16)/255)*100
+
+		red_percent = (int(red_value,16)*100/255)
+		green_percent = (int(green_value,16)*100/255)
+		blue_percent = (int(blue_value,16)*100/255)
 	
 		red.ChangeDutyCycle(red_percent)
 		green.ChangeDutyCycle(green_percent)
@@ -49,14 +50,14 @@ if __name__ == '__main__':
 		sleep(PAUSE)
 		led_color_set('0xff','0x00','0xff') ## purple
 		sleep(PAUSE)
-		led_color_set('0x00','0xff','0x3e') ## 
+		led_color_set('0x00','0xff','0x3e') 
 		sleep(PAUSE)
 
-		led_color_set('0x94','0x00','0xd3') ## 
+		led_color_set('0x94','0x00','0xd3') 
 		sleep(PAUSE)
-		led_color_set('0x76','0xee','0x00') ## 
+		led_color_set('0x76','0xee','0x00') 
 		sleep(PAUSE)
-		led_color_set('0x00','0xc5','0xcd') ## 
+		led_color_set('0x00','0xc5','0xcd') 
 		sleep(PAUSE)
 
 	led_color_set('0xff','0xff','0xff') ##  all on
