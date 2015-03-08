@@ -10,15 +10,6 @@
 #sftp configuration file
 sftp-config.json
 
-# Java/Groovy ##############################
-
-# Package files
-*.jar
-*.war
-*.ear
-# Compiled Java and Groovy
-*.class
-
 # OSX #######################################
 
 .DS_Store
@@ -80,10 +71,6 @@ local.properties
 # TeXlipse plugin
 .texlipse
 
-# PL/SQL Developer ###############################
-
-# Temp Files
-*.~sql
 
 # Python #########################################
 
@@ -132,10 +119,3 @@ docs/_build/
 # PyBuilder
 target/
 
-#Vagrant
-
-vagrant/.vagrant
-
-#Project Specific ################################
-
-###db.sqlite3
