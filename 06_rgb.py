@@ -3,9 +3,9 @@ from GPIOlib import wP2board
 from time import sleep
 import sys
 
-RED_PIN = 0
-GREEN_PIN = 1
-BLUE_PIN = 2
+RED_PIN = wP2board(0)
+GREEN_PIN = wP2board(1)
+BLUE_PIN = wP2board(2)
 PAUSE = 0.500
 
 if __name__ == '__main__':
@@ -24,14 +24,14 @@ if __name__ == '__main__':
 	## setup 
 	GPIO.setwarnings(False)
 	GPIO.setmode(GPIO.BOARD)
-	GPIO.setup(wP2board(RED_PIN),GPIO.OUT)
-	GPIO.setup(wP2board(GREEN_PIN),GPIO.OUT)
-	GPIO.setup(wP2board(BLUE_PIN),GPIO.OUT)
+	GPIO.setup(RED_PIN,GPIO.OUT)
+	GPIO.setup(GREEN_PIN,GPIO.OUT)
+	GPIO.setup(BLUE_PIN,GPIO.OUT)
 
 	## LED init
-	red = GPIO.PWM(wP2board(RED_PIN), 100) 
-	green = GPIO.PWM(wP2board(GREEN_PIN), 100) 
-	blue = GPIO.PWM(wP2board(BLUE_PIN), 100) 
+	red = GPIO.PWM(RED_PIN, 100) 
+	green = GPIO.PWM(GREEN_PIN, 100) 
+	blue = GPIO.PWM(BLUE_PIN) 100) 
 
 	##  Start with all colors off
 	red.start(0)
