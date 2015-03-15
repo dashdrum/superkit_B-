@@ -10,7 +10,9 @@ Python versions of the C programs included with the super kit.
 * 02_btn_and_led.py
 * 03_8Led.py - this one contains a bunch of extra light patterns I put in for fun
 * 04_CmdCtrlLed.py
-* 06_rgb.py 
+* 06_rgb.py
+* 12_segment.py
+* dice.py
 
 * GPIOLib.py - Contains the wP2board() function that converts the pin numbers found in the wiringPi library to the numbers used in the GPIO.BOARD configuration.
 
